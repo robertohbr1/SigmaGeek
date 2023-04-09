@@ -1,0 +1,11 @@
+Desafio da Stone
+
+Foram 2 fases, sendo a primeira mais simples e qualificatória.
+
+Na primeira fase, utilizei Python, pois eram problemas pequenos, que exigiam pouco processamento.
+Para o primeiro desafio, que era um jogo na tela, criei um Robô para ir lendo a tela e digitando as teclas. A cada erro, ele voltava para o início do jogo e tentava outro caminho.
+
+Na segunda fase, tentei manter o Python, mas como o desafio era uma Arena de 2000 x 2000, refiz o código em Delphi.
+Assim, no primeiro desafio da fase 2 você encontrará um código em Python (que não está performático) e um Delphi.
+
+Os códigos rodam em uns 15 minutos de acordo com o nível da poda.
