@@ -7,3 +7,5 @@ Para o primeiro desafio, que era um jogo na tela, criei um Robô para ir lendo a
 
 Na segunda fase, tentei manter o Python, mas como o desafio era uma Arena de 2000 x 2000, refiz o código em Delphi.
 Assim, no primeiro desafio da fase 2 você encontrará um código em Python (que não está performático) e um Delphi.
+
+Os códigos rodam em uns 15 minutos de acordo com o nível da poda.
