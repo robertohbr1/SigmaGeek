@@ -123,7 +123,7 @@ begin
 
 //  if (xv * yv < vMax - 400) then exit;
 //  if (xv + yv < vMaxAdd * 0.95) then exit;
-//  if (xv + yv < vMaxAdd - 100) then exit;
+  if (xv + yv < vMaxAdd - 50) then exit;
 
   x := High(vAnt);
   nVidas := vAnt[x];
@@ -131,19 +131,20 @@ begin
   if vArena[yv][xv] = 1 then
   begin
     inc(nVidas);
-    if nVidas > 5 then
+    if nVidas > 6 then
       exit;
   end;
 
   if high(vFinal) > 0 then
-    for x := 0 to high(vFinal) div 2 do
-      if (vFinal[x * 2] = xv) and (vFinal[x * 2 + 1] = yv) then
+    for x := 0 to high(vFinal) div 3 do
+      if (vFinal[x * 3] = xv) and (vFinal[x * 3 + 1] = yv) and (vFinal[x * 3 + 2] <= nVidas) then
         exit;
 
   nLen := length(vFinal);
-  SetLength(vFinal, nLen + 2);
+  SetLength(vFinal, nLen + 3);
   vFinal[nLen] := xv;
   vFinal[nLen + 1] := yv;
+  vFinal[nLen + 2] := nVidas;
 
   if (xv = endX) and (yv = endY) then
   begin
